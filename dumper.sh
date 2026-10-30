@@ -183,7 +183,7 @@ prop_override() {
 # Sanitize And Generate Folders
 INPUTDIR="${PROJECT_DIR}"/input		# Firmware Download/Preload Directory
 UTILSDIR="${PROJECT_DIR}"/utils		# Contains Supportive Programs
-OUTDIR=/tmp/out			# Contains Final Extracted Files
+OUTDIR="${PROJECT_DIR}/out"			# Contains Final Extracted Files
 WORK_TMPDIR="${OUTDIR}"/tmp			# Temporary Working Directory
 
 if [[ "${PUSH_ONLY}" == "false" && "${README_ONLY}" == "false" ]]; then
